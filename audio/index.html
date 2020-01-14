@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Music Player </title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./style/base.css" />
+</head>
+
+<body onload="getList()">
+
+    <div>
+        <ul id="bPlayer">
+            <li id="lPlayer">
+                <div id="contTable">
+                    <table id="_table">
+                        <thead>
+                            <tr>
+                                <td> # </td>
+                                <td> Nombre </td>
+                                <td> Opcion </td>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li>
+                <audio id="player" controls>
+                </audio>    
+            </li>
+        </ul>
+    </div>
+
+    <div id="detail">
+        <label> Usted esta escuchando </label>
+        <label id="lti">
+            <b> Titulo: </b>
+            <span id="ti"> </span>
+        </label>
+        <label id="lar">
+            <b> Artista: </b>
+            <span id="ar"> </span>
+        </label> 
+    </div>
+
+    <script src="./script/music.js"></script>
+</body>
+</html>
